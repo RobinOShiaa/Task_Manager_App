@@ -137,15 +137,7 @@ router.get('/users',checkAuth, async (req,res) => {
   // })
 })
 
-router.get('/', (req,res) => {
-    res.send({test : "Hello"})
-   
-  // User.find({}).then((users) => {
-  //   res.send(users)
-  // }).catch((e) => {
-  //   res.status(500).send()
-  // })
-})
+
 
 router.get('/users/me',checkAuth, async (req,res) => {
   res.send(req.user)
