@@ -3,7 +3,6 @@ const User = require('../models/user')
 const checkAuth = require('../middleware/checkAuth')
 const router = new express.Router()
 const multer = require('multer')
-const getStream = require('get-stream')
 const sharp = require('sharp')
 const {sendWelcome, sendCancellation} = require('../emails/profile.js')
 
