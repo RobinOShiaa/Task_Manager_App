@@ -6,7 +6,7 @@
   "scripts": {
     "test": "env-cmd ./config/dev.env nodemon index.js",
     "jst" : "env-cmd ./config/test.env jest --watchAll",
-    "start": "node index.js"
+    "start": "node ./src/index.js"
   },
   "jest" : {
     "testEnvironment" : "node"
